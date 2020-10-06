@@ -26,4 +26,4 @@ def random_n_digits(n):
     range_end = (10**n)-1
     return randint(range_start, range_end)
 
-print("68" + str(random_n_digits(19)))
+print("68" + str(random_n_digits(17)))
