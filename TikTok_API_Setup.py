@@ -1,9 +1,7 @@
 from TikTokApi import TikTokApi
+import json
+
 api = TikTokApi()
-
-results = 10
-
-# trending = api.trending(count=results)
 
 # for tiktok in trending:
 #     print(tiktok['id'])
@@ -20,10 +18,33 @@ results = 10
 #print(len("6875482058274229510"))
 #print("4"+"5")
 
-from random import randint
-def random_n_digits(n):
-    range_start = 10**(n-1)
-    range_end = (10**n)-1
-    return randint(range_start, range_end)
+# Creating a random 19-digit ID
+# from random import randint
+# def random_n_digits(n):
+#     range_start = 10**(n-1)
+#     range_end = (10**n)-1
+#     return randint(range_start, range_end)
+#
+# count = 5
+# for i in range(count):
+#     Id = "688060880982019610" + str(random_n_digits(1))
+#     TT_Id = api.getTikTokById(int(Id), request_delay=3)
+#     print(Id, TT_Id)
 
-print("68" + str(random_n_digits(17)))
+# Saving a dictionary
+# results = 20
+# trending = api.trending(count=results)
+#
+# for t in trending:
+#     print(t['id'])
+
+# saved_json = json.dumps(trending[0])
+#
+# f = open("dict.json", "w")
+# f.write(saved_json)
+# f.close()
+
+# from random import uniform
+# a = uniform(0.5, 1.5)
+# 
+# print(a)
