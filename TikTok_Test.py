@@ -1,7 +1,7 @@
-from TikTokApi import TikTokApi
-import json
+#from TikTokApi import TikTokApi
+#import json
 
-api = TikTokApi()
+#api = TikTokApi()
 
 # for tiktok in trending:
 #     print(tiktok['id'])
@@ -46,5 +46,13 @@ api = TikTokApi()
 
 # from random import uniform
 # a = uniform(0.5, 1.5)
-# 
+#
 # print(a)
+
+
+from datetime import datetime
+
+now = datetime.now()
+now = now.strftime("%d/%m/%Y %H:%M:%S")
+
+print(now)

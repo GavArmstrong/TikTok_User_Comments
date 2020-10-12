@@ -8,7 +8,7 @@ results = 5
 
 f = open("TikTok_DB/DB.json", "w")
 
-#
+
 
 for j in range(20):
     trending = api.trending(count=results, request_delay=uniform(0.5,1.5))
