@@ -54,5 +54,6 @@ from datetime import datetime
 
 now = datetime.now()
 now = now.strftime("%d/%m/%Y %H:%M:%S")
+now = now.replace(" ", "")
 
 print(now)
