@@ -1,12 +1,18 @@
 from TikTokApi import TikTokApi
 import json
 from random import uniform
+from datetime import datetime
+from re import sub
 
 api = TikTokApi()
 
 results = 5
 
-f = open("TikTok_DB/DB.json", "w")
+file_iter = datetime.now()
+file_iter = file_iter.strftime("%d/%m/%Y %H:%M:%S")
+file_iter = sub("(/)|(:)|( )", "", file_iter)
+
+f = open("TikTok_DB/DB_" + file_iter + ".json", "w")
 
 
 

@@ -57,4 +57,4 @@ now = datetime.now()
 now = now.strftime("%d/%m/%Y %H:%M:%S")
 now = sub("(/)|(:)|( )", "", now)
 
-print(now)
+print("TikTok_DB/DB_" + now + ".json")
