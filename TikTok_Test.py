@@ -59,10 +59,20 @@
 #
 # print("TikTok_DB/DB_" + now + ".json")
 
-from os import listdir
-from os.path import isfile, join
+# from os import listdir
+# from os.path import isfile, join
 
 # path = os.getcwd()
 
-files = listdir()
-print(mypath)
+#files = listdir(path="TikTok_DB")
+# file_path = "TikTok_DB"
+# files = [file for file in listdir(path=file_path) if isfile(join(file_path, file))]
+# print(files)
+
+import pandas as pd
+#path = "TikTok_DB/test.json"
+
+tbl = pd.read_json(r'\Google Drive\Projects\TikTok User Comments\TikTok_DB\test.json',
+    orient='index')
+
+print(tbl)
