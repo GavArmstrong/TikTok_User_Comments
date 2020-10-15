@@ -50,11 +50,19 @@
 # print(a)
 
 
-from datetime import datetime
-from re import sub
+# from datetime import datetime
+# from re import sub
+#
+# now = datetime.now()
+# now = now.strftime("%d/%m/%Y %H:%M:%S")
+# now = sub("(/)|(:)|( )", "", now)
+#
+# print("TikTok_DB/DB_" + now + ".json")
 
-now = datetime.now()
-now = now.strftime("%d/%m/%Y %H:%M:%S")
-now = sub("(/)|(:)|( )", "", now)
+from os import listdir
+from os.path import isfile, join
 
-print("TikTok_DB/DB_" + now + ".json")
+# path = os.getcwd()
+
+files = listdir()
+print(mypath)
