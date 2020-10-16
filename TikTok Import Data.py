@@ -8,4 +8,5 @@ path = "TikTok_DB"
 
 files = [item for item in listdir(path=path) if isfile(join(path, item))]
 
+
 print(files)
