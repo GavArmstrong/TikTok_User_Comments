@@ -11,7 +11,21 @@ files = [item for item in listdir(path=path) if isfile(join(path, item))]
 for f in files:
     print(f)
 
+from glob import glob as gg
 
+a = gg(pathname='Test/*.json')
+
+print(a)
+
+df = pd.DataFrame()
+
+print(df)
+
+for f in a:
+    tmp = pd.read_json(f, orient='index')
+    df = pd.concat([df, tmp], axis=0, ignore_index=True)
+
+print(df)
 
 # with open('Test/'+'test1.json') as g:
 #     read_data = pd.read_json(g, orient='index')
