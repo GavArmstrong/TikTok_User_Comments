@@ -30,3 +30,14 @@ print(df)
 # with open('Test/'+'test1.json') as g:
 #     read_data = pd.read_json(g, orient='index')
 #     print(read_data)
+
+b = gg(pathname='TikTok_Test/*.json')
+
+print(b[0])
+
+import json
+
+with open(b[0], "r") as h:
+    data = json.load(h)
+
+print(data)
