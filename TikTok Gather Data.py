@@ -22,5 +22,4 @@ for j in range(20):
         json_obj = json.dumps(i)
         f.write(json_obj)
 
-
 f.close()
