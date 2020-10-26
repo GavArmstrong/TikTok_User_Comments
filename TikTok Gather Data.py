@@ -19,11 +19,12 @@ for j in range(1):
     trending = api.trending(count=results, request_delay=uniform(0.5,1.5))
 
     for i in range(len(trending)):
-        f.write("{\"id\":")
+        f.write("{\"id\": \"")
         f.write(trending[i]['id'])
-        f.write("\n")
+        f.write("\",\n\"TikTok\": ")
         json_obj = json.dumps(trending[i])
         f.write(json_obj)
+        f.write("}")
         if i < len(trending) - 1:
             f.write(",\n")
 
