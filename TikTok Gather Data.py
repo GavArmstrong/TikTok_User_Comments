@@ -15,6 +15,7 @@ file_iter = sub("(/)|(:)|( )", "", file_iter)
 f = open("TikTok_DB/DB_" + file_iter + ".json", "w")
 f.write("{")
 
+
 for j in range(1):
     trending = api.trending(count=results, request_delay=uniform(0.5,1.5))
 
