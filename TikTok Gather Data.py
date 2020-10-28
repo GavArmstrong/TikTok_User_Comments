@@ -6,7 +6,7 @@ from re import sub
 
 api = TikTokApi()
 
-results = 2
+results = 10
 
 file_iter = datetime.now()
 file_iter = file_iter.strftime("%d/%m/%Y %H:%M:%S")
@@ -15,8 +15,7 @@ file_iter = sub("(/)|(:)|( )", "", file_iter)
 f = open("TikTok_DB/DB_" + file_iter + ".json", "w")
 f.write("{")
 
-
-for j in range(1):
+for j in range(10):
     trending = api.trending(count=results, request_delay=uniform(0.5,1.5))
 
     for i in range(len(trending)):
