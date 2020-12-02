@@ -26,6 +26,5 @@ for j in range(10):
         f.write(json_obj)
         if i < len(trending) - 1:
             f.write(",\n")
-
 f.write("}")
 f.close()
